@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -220,6 +220,23 @@ pp. \bfpage{2323}--\blpage{2332}
 \bfpage{1388}--\blpage{1398}
 (\byear{2022})
 \doiurl{10.1021/acs.jcim.1c01535}
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Bickerton et~al.}{2012}]{bib13}
+\begin{barticle}
+\bauthor{\bsnm{Bickerton}, \binits{G.R.}},
+\bauthor{\bsnm{Paolini}, \binits{G.V.}},
+\bauthor{\bsnm{Besnard}, \binits{J.}},
+\bauthor{\bsnm{Muresan}, \binits{S.}},
+\bauthor{\bsnm{Hopkins}, \binits{A.L.}}:
+\batitle{Quantifying the chemical beauty of drugs}.
+\bjtitle{Nature Chemistry}
+\bvolume{4},
+\bfpage{90}--\blpage{98}
+(\byear{2012})
+\doiurl{10.1038/nchem.1243}
 \end{barticle}
 \endbibitem
 
