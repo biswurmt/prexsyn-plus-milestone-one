@@ -1,0 +1,160 @@
+%% milestone_one_minimal.tex — Minimalist Academic Template
+%% Expanding Synthesizable Chemical Space
+%% CSC2541H · AI for Drug Discovery · University of Toronto · March 2026
+%%
+%% Authors: Tyler Biswurm, Jingxin Huang, Yuma Nakamura, Ben Luo
+%%
+%% Design: 11pt Times New Roman, 2 cm margins, single spacing.
+%% Navy accent rules and small-caps headings.
+
+\documentclass[11pt,a4paper]{article}
+
+%% ── Typography ───────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+
+%% ── Page geometry ────────────────────────────────────────────────────────────
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+%% ── Spacing ──────────────────────────────────────────────────────────────────
+\usepackage{setspace}
+\singlespacing
+\setlength{\parindent}{1em}
+\setlength{\parskip}{2pt}
+
+%% ── Colour palette ───────────────────────────────────────────────────────────
+\usepackage[dvipsnames]{xcolor}
+\definecolor{navy}{HTML}{1A2B3C}
+
+%% ── Section headings ─────────────────────────────────────────────────────────
+%% Small-caps bold in navy, thin rule below, tight vertical spacing.
+%% \Needspace* ensures the heading + rule + at least one paragraph line
+%% are never stranded alone at the bottom of a page.
+\usepackage{titlesec}
+\usepackage{needspace}
+\titleformat{\section}
+  {\normalfont\small\bfseries\scshape\color{navy}}
+  {}{0em}{\Needspace*{4\baselineskip}}
+  [\vspace{1.5pt}{\color{navy}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{9pt plus 2pt minus 1pt}{5pt}
+
+%% ── Figures ──────────────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,labelsep=period,skip=3pt}
+\newcommand{\diagramwidth}{\textwidth}
+
+%% ── Tables ───────────────────────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+%% ── Mathematics ──────────────────────────────────────────────────────────────
+%% newtxmath already provides the symbol fonts; load only amsmath for
+%% display-math environments (align, etc.).  Loading amssymb/amsfonts on top
+%% of newtxmath causes a \Bbbk redefinition conflict.
+\usepackage{amsmath}
+
+%% ── Bibliography ─────────────────────────────────────────────────────────────
+%% numbers,square: compact [1] style consistent with STEM journals.
+%% Without these options natbib defers to the bst's \citeauthoryear labels,
+%% giving verbose (Author et al., Year) in text.
+\usepackage[numbers,square]{natbib}
+\bibliographystyle{sn-mathphys-num}
+\setlength{\bibsep}{3pt}
+%% sn-mathphys-num.bst emits \bibcommenthead unconditionally; define it as a
+%% no-op since the Springer journal submission note is irrelevant here.
+\providecommand{\bibcommenthead}{}
+
+%% ── Hyperref (load last) ─────────────────────────────────────────────────────
+\usepackage[
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=navy,
+  urlcolor=navy,
+  pdftitle={Expanding synthesizable chemical space},
+  pdfauthor={Biswurm, Huang, Nakamura, Luo}]{hyperref}
+
+%% ── Title block ──────────────────────────────────────────────────────────────
+%% Redefine \abstract{} as a storage command (replaces article's abstract env).
+%% Define \keywords{} for optional keyword line.
+\makeatletter
+  \let\@abstracttext\@empty
+  \long\def\abstract#1{\long\gdef\@abstracttext{#1}}
+  \let\@keywords\@empty
+  \def\keywords#1{\gdef\@keywords{#1}}
+
+  \renewcommand{\maketitle}{%
+    \noindent{\color{navy}\rule{\textwidth}{1.5pt}}\par
+    \vspace{5pt}%
+    \noindent{\large\bfseries\@title}\par
+    \vspace{4pt}%
+    \noindent{\small%
+      Tyler Biswurm,\enspace Jingxin Huang,\enspace
+      Yuma Nakamura,\enspace Ben Luo}\par
+    \vspace{1pt}%
+    \noindent{\small\textit{%
+      Department of Computer Science, University of Toronto
+      \enspace$\cdot$\enspace CSC2541H
+      \enspace$\cdot$\enspace March~2026}}\par
+    \vspace{8pt}%
+    {\small\noindent\textbf{Abstract.}\enspace\@abstracttext}%
+    \ifx\@keywords\@empty\else
+      \par\vspace{2pt}%
+      {\small\noindent\textbf{Keywords:}\enspace\textit{\@keywords}}%
+    \fi
+    \par\vspace{6pt}%
+    \noindent{\color{navy}\rule{\textwidth}{0.4pt}}\par
+    \newpage
+  }
+\makeatother
+
+\pagestyle{plain}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+
+\begin{document}
+
+\title{Expanding synthesizable chemical space: benchmarking
+  post-generation molecular modification}
+
+\abstract{Synthesis-aware generative models produce drug candidates
+  guaranteed to be synthesizable from commercial building blocks, but
+  each is bounded by its training chemical space. PrexSyn, the current
+  state of the art, reconstructs 94\% of Enamine REAL molecules but
+  only 28\% of the broader ChEMBL bioactive distribution, leaving 72\%
+  of pharmacologically validated chemical space beyond its reach. We
+  investigate whether post-generation modification methods expand this
+  coverage when composed with the generative model. Four methods
+  spanning rule-based and learned paradigms (CReM, mmpdb, JT-VAE,
+  LibINVENT) are applied to PrexSyn's output across 100 ChEMBL-derived
+  property specifications stratified by difficulty. Variants are
+  evaluated on synthesizability, property conservation (substructural
+  and physicochemical), drug-likeness, and chemical diversity, then
+  ranked by marginal value over a repeated-sampling baseline.
+  Complementarity analysis identifies optimal multi-method combinations,
+  providing empirical guidance for extending synthesis-aware generation
+  in drug discovery workflows.}
+
+\keywords{molecular generation, synthetic chemistry, drug discovery,
+  machine learning}
+
+\maketitle
+
+%% ── Body ─────────────────────────────────────────────────────────────────────
+\input{sections/01-intro}
+
+\input{sections/02-methods}
+\input{sections/03-preprocessing}
+\input{sections/05-setup}
+\input{sections/04-diagram}
+\input{sections/06-timeline}
+
+\clearpage
+
+%% ── References ───────────────────────────────────────────────────────────────
+\bibliography{references}
+
+\end{document}

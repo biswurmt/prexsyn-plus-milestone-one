@@ -40,10 +40,12 @@ Synthesis-aware generative models like PrexSyn guarantee synthesizability but ar
 
 **Experimental Overview:**
 - 1,000 ChEMBL-derived property specifications fed to PrexSyn
-- Five modification methods (CReM, mmpdb, JT-VAE, LibINVENT, ReactEA) applied to top PrexSyn candidate per spec
+- Four modification methods (CReM, mmpdb, JT-VAE, LibINVENT) applied to top PrexSyn candidate per spec
 - Variants evaluated for synthesizability + property conservation (three metrics)
 - Repeated PrexSyn sampling as baseline
 - Core outputs: method rankings by marginal value + complementarity analysis
+
+**CRITICAL NOTE (Updated March 9, 2026):** ReactEA has been definitively dropped from project scope. The final design uses four modification methods, not five. All references have been updated to reflect this change.
 
 See `context/paper-draft.md` for full methods, pseudocode, scope, and limitations.
 
@@ -210,6 +212,7 @@ This is a proposal stage. Your job is to help them move from "rough thinking" to
 - **`context/working-notes.md`** — Design decisions, open questions, discarded ideas, stretch metrics, research provenance
 - **`context/paper-draft.md`** — Full abstract, methods pseudocode, scope, limitations
 - **`context/modification-methods-research.txt`** — Literature survey of ~50 modification methods
+- **`context/prexsyn-paper`** — Research article on PrexSyn
 - **`guidelines.md`** — Official Milestone 1 requirements (3 pages + unlimited references)
 
 ---

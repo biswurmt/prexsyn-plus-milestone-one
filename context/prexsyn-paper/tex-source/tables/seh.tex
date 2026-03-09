@@ -1,0 +1,15 @@
+\begin{tabular}{l c ccc}
+\toprule
+Method & Syn. & sEH($\uparrow$) & SA($\downarrow$) & QED($\uparrow$) \\
+\midrule
+FragGFN \citep{bengio2021flow} & \xmark & 0.77$\pm$0.01 & 6.28$\pm$0.02 & 0.30$\pm$0.01 \\
+FragGFN(SA) \citep{bengio2021flow} & \xmark & 0.70$\pm$0.01 & 5.45$\pm$0.05 & 0.29$\pm$0.01 \\
+SyntheMol \citep{swanson2024synthemol} & \cmark & 0.64$\pm$0.01 & 3.08$\pm$0.01 & 0.63$\pm$0.01 \\
+SynFlowNet \citep{cretu2024synflownet} & \cmark & 0.92$\pm$0.01 & 2.92$\pm$0.01 & 0.59$\pm$0.02 \\
+SynFlowNet(SA) \citep{cretu2024synflownet} & \cmark & 0.94$\pm$0.01 & 2.67$\pm$0.03 & 0.68$\pm$0.01 \\
+SynFlowNet(QED) \citep{cretu2024synflownet} & \cmark & 0.86$\pm$0.03 & 4.02$\pm$0.26 & 0.74$\pm$0.04 \\
+ReaSyn \citep{lee2025rethinking} & \cmark & 0.97$\pm$0.01 & \bf 2.01$\pm$0.02 & 0.75$\pm$0.01 \\
+\midrule
+PrexSyn  & \cmark & \bf 1.01$\pm$0.00 & 2.23$\pm$0.04 & \bf 0.80$\pm$0.01 \\
+\bottomrule
+\end{tabular}

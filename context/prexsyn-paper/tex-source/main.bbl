@@ -1,0 +1,290 @@
+\begin{thebibliography}{55}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bengio et~al.(2021)Bengio, Jain, Korablyov, Precup, and Bengio]{bengio2021flow}
+E.~Bengio, M.~Jain, M.~Korablyov, D.~Precup, and Y.~Bengio.
+\newblock Flow network based generative models for non-iterative diverse candidate generation.
+\newblock \emph{Advances in neural information processing systems}, 34:\penalty0 27381--27394, 2021.
+
+\bibitem[Blanc and Rendle(2018)]{blanc2018adaptive}
+G.~Blanc and S.~Rendle.
+\newblock Adaptive sampled softmax with kernel based sampling.
+\newblock In \emph{International conference on machine learning}, pages 590--599. PMLR, 2018.
+
+\bibitem[Boby et~al.(2023)Boby, Fearon, Ferla, Filep, Koekemoer, Robinson, Consortium‡, Chodera, Lee, London, et~al.]{boby2023open}
+M.~L. Boby, D.~Fearon, M.~Ferla, M.~Filep, L.~Koekemoer, M.~C. Robinson, C.~M. Consortium‡, J.~D. Chodera, A.~A. Lee, N.~London, et~al.
+\newblock Open science discovery of potent noncovalent sars-cov-2 main protease inhibitors.
+\newblock \emph{Science}, 382\penalty0 (6671):\penalty0 eabo7201, 2023.
+
+\bibitem[Bradshaw et~al.(2020)Bradshaw, Paige, Kusner, Segler, and Hern{\'a}ndez-Lobato]{bradshaw2020barking}
+J.~Bradshaw, B.~Paige, M.~J. Kusner, M.~Segler, and J.~M. Hern{\'a}ndez-Lobato.
+\newblock Barking up the right tree: an approach to search over molecule synthesis dags.
+\newblock \emph{Advances in neural information processing systems}, 33:\penalty0 6852--6866, 2020.
+
+\bibitem[Brown et~al.(2019)Brown, Fiscato, Segler, and Vaucher]{brown2019guacamol}
+N.~Brown, M.~Fiscato, M.~H. Segler, and A.~C. Vaucher.
+\newblock Guacamol: benchmarking models for de novo molecular design.
+\newblock \emph{Journal of chemical information and modeling}, 59\penalty0 (3):\penalty0 1096--1108, 2019.
+
+\bibitem[Chagas et~al.(2018)Chagas, Moss, and Alisaraie]{chagas2018drug}
+C.~M. Chagas, S.~Moss, and L.~Alisaraie.
+\newblock Drug metabolites and their effects on the development of adverse reactions: Revisiting lipinski’s rule of five.
+\newblock \emph{International journal of pharmaceutics}, 549\penalty0 (1-2):\penalty0 133--149, 2018.
+
+\bibitem[Cretu et~al.(2024)Cretu, Harris, Igashov, Schneuing, Segler, Correia, Roy, Bengio, and Li{\`o}]{cretu2024synflownet}
+M.~Cretu, C.~Harris, I.~Igashov, A.~Schneuing, M.~Segler, B.~Correia, J.~Roy, E.~Bengio, and P.~Li{\`o}.
+\newblock Synflownet: Design of diverse and novel molecules with synthesis constraints.
+\newblock \emph{arXiv preprint arXiv:2405.01155}, 2024.
+
+\bibitem[Degen et~al.(2008)Degen, Wegscheid-Gerlach, Zaliani, and Rarey]{degen2008art}
+J.~Degen, C.~Wegscheid-Gerlach, A.~Zaliani, and M.~Rarey.
+\newblock On the art of compiling and using'drug-like'chemical fragment spaces.
+\newblock \emph{ChemMedChem}, 3\penalty0 (10):\penalty0 1503, 2008.
+
+\bibitem[Du and Kaelbling(2024)]{du2024position}
+Y.~Du and L.~P. Kaelbling.
+\newblock Position: Compositional generative modeling: A single model is not all you need.
+\newblock In \emph{Forty-first International Conference on Machine Learning}, 2024.
+
+\bibitem[Du et~al.(2020)Du, Li, and Mordatch]{du2020compositional}
+Y.~Du, S.~Li, and I.~Mordatch.
+\newblock Compositional visual generation with energy based models.
+\newblock \emph{Advances in Neural Information Processing Systems}, 33:\penalty0 6637--6647, 2020.
+
+\bibitem[Eigen et~al.(2013)Eigen, Ranzato, and Sutskever]{eigen2013learning}
+D.~Eigen, M.~Ranzato, and I.~Sutskever.
+\newblock Learning factored representations in a deep mixture of experts.
+\newblock \emph{arXiv preprint arXiv:1312.4314}, 2013.
+
+\bibitem[Enamine(2025)]{enamineBuildingBlocks}
+Enamine.
+\newblock {B}uilding {B}locks {C}atalog - {E}namine --- enamine.net.
+\newblock \url{https://enamine.net/building-blocks/building-blocks-catalog}, 2025.
+\newblock [Accessed 30-08-2025].
+
+\bibitem[Ertl and Schuffenhauer(2009)]{ertl2009estimation}
+P.~Ertl and A.~Schuffenhauer.
+\newblock Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions.
+\newblock \emph{Journal of cheminformatics}, 1\penalty0 (1):\penalty0 8, 2009.
+
+\bibitem[Gao and Coley(2020)]{gao2020synthesizability}
+W.~Gao and C.~W. Coley.
+\newblock The synthesizability of molecules proposed by generative models.
+\newblock \emph{Journal of chemical information and modeling}, 60\penalty0 (12):\penalty0 5714--5723, 2020.
+
+\bibitem[Gao et~al.(2021)Gao, Mercado, and Coley]{gao2021amortized}
+W.~Gao, R.~Mercado, and C.~W. Coley.
+\newblock Amortized tree generation for bottom-up synthesis planning and synthesizable molecular design.
+\newblock \emph{arXiv preprint arXiv:2110.06389}, 2021.
+
+\bibitem[Gao et~al.(2022)Gao, Fu, Sun, and Coley]{gao2022sample}
+W.~Gao, T.~Fu, J.~Sun, and C.~Coley.
+\newblock Sample efficiency matters: a benchmark for practical molecular optimization.
+\newblock \emph{Advances in neural information processing systems}, 35:\penalty0 21342--21357, 2022.
+
+\bibitem[Gao et~al.(2025)Gao, Luo, and Coley]{gao2025generative}
+W.~Gao, S.~Luo, and C.~W. Coley.
+\newblock Generative ai for navigating synthesizable chemical space.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 122\penalty0 (41):\penalty0 e2415665122, 2025.
+
+\bibitem[Gaulton et~al.(2012)Gaulton, Bellis, Bento, Chambers, Davies, Hersey, Light, McGlinchey, Michalovich, Al-Lazikani, et~al.]{gaulton2012chembl}
+A.~Gaulton, L.~J. Bellis, A.~P. Bento, J.~Chambers, M.~Davies, A.~Hersey, Y.~Light, S.~McGlinchey, D.~Michalovich, B.~Al-Lazikani, et~al.
+\newblock Chembl: a large-scale bioactivity database for drug discovery.
+\newblock \emph{Nucleic acids research}, 40\penalty0 (D1):\penalty0 D1100--D1107, 2012.
+
+\bibitem[Gobbi and Poppinger(1998)]{gobbi1998genetic}
+A.~Gobbi and D.~Poppinger.
+\newblock Genetic optimization of combinatorial libraries.
+\newblock \emph{Biotechnology and bioengineering}, 61\penalty0 (1):\penalty0 47--54, 1998.
+
+\bibitem[G{\'o}mez-Bombarelli et~al.(2018)G{\'o}mez-Bombarelli, Wei, Duvenaud, Hern{\'a}ndez-Lobato, S{\'a}nchez-Lengeling, Sheberla, Aguilera-Iparraguirre, Hirzel, Adams, and Aspuru-Guzik]{gomez2018automatic}
+R.~G{\'o}mez-Bombarelli, J.~N. Wei, D.~Duvenaud, J.~M. Hern{\'a}ndez-Lobato, B.~S{\'a}nchez-Lengeling, D.~Sheberla, J.~Aguilera-Iparraguirre, T.~D. Hirzel, R.~P. Adams, and A.~Aspuru-Guzik.
+\newblock Automatic chemical design using a data-driven continuous representation of molecules.
+\newblock \emph{ACS central science}, 4\penalty0 (2):\penalty0 268--276, 2018.
+
+\bibitem[Gottipati et~al.(2020)Gottipati, Sattarov, Niu, Pathak, Wei, Liu, Blackburn, Thomas, Coley, Tang, et~al.]{gottipati2020learning}
+S.~K. Gottipati, B.~Sattarov, S.~Niu, Y.~Pathak, H.~Wei, S.~Liu, S.~Blackburn, K.~Thomas, C.~Coley, J.~Tang, et~al.
+\newblock Learning to navigate the synthetically accessible chemical space using reinforcement learning.
+\newblock In \emph{International conference on machine learning}, pages 3668--3679. PMLR, 2020.
+
+\bibitem[Grygorenko et~al.(2020)Grygorenko, Radchenko, Dziuba, Chuprina, Gubina, and Moroz]{grygorenko2020generating}
+O.~O. Grygorenko, D.~S. Radchenko, I.~Dziuba, A.~Chuprina, K.~E. Gubina, and Y.~S. Moroz.
+\newblock Generating multibillion chemical space of readily accessible screening compounds.
+\newblock \emph{Iscience}, 23\penalty0 (11), 2020.
+
+\bibitem[Guo and Schwaller(2024)]{guo2024saturn}
+J.~Guo and P.~Schwaller.
+\newblock Saturn: Sample-efficient generative molecular design using memory manipulation.
+\newblock \emph{arXiv preprint arXiv:2405.17066}, 2024.
+
+\bibitem[Guo and Schwaller(2025)]{guo2025directly}
+J.~Guo and P.~Schwaller.
+\newblock Directly optimizing for synthesizability in generative molecular design using retrosynthesis models.
+\newblock \emph{Chemical Science}, 16\penalty0 (16):\penalty0 6943--6956, 2025.
+
+\bibitem[Hartenfeller et~al.(2012)Hartenfeller, Zettl, Walter, Rupp, Reisen, Proschak, Weggen, Stark, and Schneider]{hartenfeller2012dogs}
+M.~Hartenfeller, H.~Zettl, M.~Walter, M.~Rupp, F.~Reisen, E.~Proschak, S.~Weggen, H.~Stark, and G.~Schneider.
+\newblock Dogs: reaction-driven de novo design of bioactive compounds.
+\newblock \emph{PLoS computational biology}, 8\penalty0 (2):\penalty0 e1002380, 2012.
+
+\bibitem[Hinton(1999)]{hinton1999poe}
+G.~Hinton.
+\newblock Products of experts.
+\newblock In \emph{Proceedings of the Ninth International Conference on Artificial Neural Networks}, pages 1--6, 1999.
+\newblock URL \url{https://www.cs.toronto.edu/~hinton/absps/icann-99.pdf}.
+
+\bibitem[Horwood and Noutahi(2020)]{horwood2020reactor}
+J.~Horwood and E.~Noutahi.
+\newblock Molecular design in synthetically accessible chemical space via deep reinforcement learning.
+\newblock \emph{ACS omega}, 5\penalty0 (51):\penalty0 32984--32994, 2020.
+
+\bibitem[Jensen(2019)]{jensen2019graph}
+J.~H. Jensen.
+\newblock A graph-based genetic algorithm and generative model/monte carlo tree search for the exploration of chemical space.
+\newblock \emph{Chemical science}, 10\penalty0 (12):\penalty0 3567--3572, 2019.
+
+\bibitem[Jin et~al.(2020)Jin, Barzilay, and Jaakkola]{jin2020multi}
+W.~Jin, R.~Barzilay, and T.~Jaakkola.
+\newblock Multi-objective molecule generation using interpretable substructures.
+\newblock In \emph{International conference on machine learning}, pages 4849--4859. PMLR, 2020.
+
+\bibitem[Jocys et~al.(2024)Jocys, Zhu, Willems, and Farrahi]{jocys2024synthformer}
+Z.~Jocys, Z.~Zhu, H.~M. Willems, and K.~Farrahi.
+\newblock Synthformer: Equivariant pharmacophore-based generation of synthesizable molecules for ligand-based drug design.
+\newblock \emph{arXiv preprint arXiv:2410.02718}, 2024.
+
+\bibitem[Korovina et~al.(2020)Korovina, Xu, Kandasamy, Neiswanger, Poczos, Schneider, and Xing]{korovina2020chembo}
+K.~Korovina, S.~Xu, K.~Kandasamy, W.~Neiswanger, B.~Poczos, J.~Schneider, and E.~Xing.
+\newblock Chembo: Bayesian optimization of small organic molecules with synthesizable recommendations.
+\newblock In \emph{International Conference on Artificial Intelligence and Statistics}, pages 3393--3403. PMLR, 2020.
+
+\bibitem[Koziarski et~al.(2024)Koziarski, Rekesh, Shevchuk, van~der Sloot, Gai{\'n}ski, Bengio, Liu, Tyers, and Batey]{koziarski2024rgfn}
+M.~Koziarski, A.~Rekesh, D.~Shevchuk, A.~van~der Sloot, P.~Gai{\'n}ski, Y.~Bengio, C.~Liu, M.~Tyers, and R.~Batey.
+\newblock Rgfn: Synthesizable molecular generation using gflownets.
+\newblock \emph{Advances in Neural Information Processing Systems}, 37:\penalty0 46908--46955, 2024.
+
+\bibitem[Lee et~al.(2025)Lee, Kreis, Veccham, Liu, Reidenbach, Paliwal, Nie, and Vahdat]{lee2025rethinking}
+S.~Lee, K.~Kreis, S.~P. Veccham, M.~Liu, D.~Reidenbach, S.~Paliwal, W.~Nie, and A.~Vahdat.
+\newblock Rethinking molecule synthesizability with chain-of-reaction.
+\newblock \emph{arXiv preprint arXiv: 2509.16084}, 2025.
+
+\bibitem[Lipinski(2004)]{lipinski2004lead}
+C.~A. Lipinski.
+\newblock Lead-and drug-like compounds: the rule-of-five revolution.
+\newblock \emph{Drug discovery today: Technologies}, 1\penalty0 (4):\penalty0 337--341, 2004.
+
+\bibitem[Luo et~al.(2024)Luo, Gao, Wu, Peng, Coley, and Ma]{luo2024projecting}
+S.~Luo, W.~Gao, Z.~Wu, J.~Peng, C.~W. Coley, and J.~Ma.
+\newblock Projecting molecules into synthesizable chemical spaces.
+\newblock In \emph{International Conference on Machine Learning}, pages 33289--33304. PMLR, 2024.
+
+\bibitem[Olivecrona et~al.(2017)Olivecrona, Blaschke, Engkvist, and Chen]{olivecrona2017molecular}
+M.~Olivecrona, T.~Blaschke, O.~Engkvist, and H.~Chen.
+\newblock Molecular de-novo design through deep reinforcement learning.
+\newblock \emph{Journal of cheminformatics}, 9\penalty0 (1):\penalty0 48, 2017.
+
+\bibitem[RDKit(2010)]{rdkit}
+RDKit.
+\newblock {RDK}it: Open-source cheminformatics.
+\newblock \url{http://www.rdkit.org}, 2010.
+
+\bibitem[Rekesh et~al.(2025)Rekesh, Cretu, Shevchuk, Somnath, Li{\`o}, Batey, Tyers, Koziarski, and Liu]{rekesh2025syncogen}
+A.~Rekesh, M.~Cretu, D.~Shevchuk, V.~R. Somnath, P.~Li{\`o}, R.~A. Batey, M.~Tyers, M.~Koziarski, and C.-H. Liu.
+\newblock Syncogen: Synthesizable 3d molecule generation via joint reaction and coordinate modeling.
+\newblock \emph{arXiv preprint arXiv:2507.11818}, 2025.
+
+\bibitem[Rogers and Hahn(2010)]{rogers2010extended}
+D.~Rogers and M.~Hahn.
+\newblock Extended-connectivity fingerprints.
+\newblock \emph{Journal of chemical information and modeling}, 50\penalty0 (5):\penalty0 742--754, 2010.
+
+\bibitem[Rosen(2019)]{rosen2019discrete}
+K.~H. Rosen.
+\newblock \emph{Discrete Mathematics and Its Applications}.
+\newblock McGraw-Hill Education, 8th edition, 2019.
+\newblock ISBN 978-1-259-67651-2.
+\newblock “Chapter 12.2 Representing Boolean Functions”.
+
+\bibitem[Roy et~al.(2015)Roy, Kar, and Das]{roy2015qsarbook}
+K.~Roy, S.~Kar, and R.~Das.
+\newblock Chapter 1.2: what is qsar? definitions and formulism.
+\newblock \emph{A primer on QSAR/QSPR modeling: Fundamental Concepts. New York: Springer-Verlag Inc}, pages 2--6, 2015.
+\newblock URL \url{https://books.google.com/books?id=FFcSCAAAQBAJ&pg=PA4}.
+
+\bibitem[Santos-Martins et~al.(2021)Santos-Martins, Solis-Vasquez, Tillack, Sanner, Koch, and Forli]{autodockgpu}
+D.~Santos-Martins, L.~Solis-Vasquez, A.~F. Tillack, M.~F. Sanner, A.~Koch, and S.~Forli.
+\newblock Accelerating autodock4 with gpus and gradient-based local search.
+\newblock \emph{Journal of Chemical Theory and Computation}, 17\penalty0 (2):\penalty0 1060--1073, 2021.
+\newblock \doi{10.1021/acs.jctc.0c01006}.
+
+\bibitem[Seo et~al.(2024)Seo, Kim, Shen, Ester, Park, Ahn, and Kim]{seo2024generative}
+S.~Seo, M.~Kim, T.~Shen, M.~Ester, J.~Park, S.~Ahn, and W.~Y. Kim.
+\newblock Generative flows on synthetic pathway for drug design.
+\newblock \emph{arXiv preprint arXiv:2410.04542}, 2024.
+
+\bibitem[Shivanyuk et~al.(2007)Shivanyuk, Ryabukhin, Tolmachev, Bogolyubsky, Mykytenko, Chupryna, Heilman, and Kostyuk]{shivanyuk2007enamine}
+A.~N. Shivanyuk, S.~V. Ryabukhin, A.~Tolmachev, A.~Bogolyubsky, D.~Mykytenko, A.~Chupryna, W.~Heilman, and A.~Kostyuk.
+\newblock Enamine real database: Making chemical diversity real.
+\newblock \emph{Chemistry today}, 25\penalty0 (6):\penalty0 58--59, 2007.
+
+\bibitem[Stokes et~al.(2020)Stokes, Yang, Swanson, Jin, Cubillos-Ruiz, Donghia, MacNair, French, Carfrae, Bloom-Ackermann, et~al.]{stokes2020deep}
+J.~M. Stokes, K.~Yang, K.~Swanson, W.~Jin, A.~Cubillos-Ruiz, N.~M. Donghia, C.~R. MacNair, S.~French, L.~A. Carfrae, Z.~Bloom-Ackermann, et~al.
+\newblock A deep learning approach to antibiotic discovery.
+\newblock \emph{Cell}, 180\penalty0 (4):\penalty0 688--702, 2020.
+
+\bibitem[Sun et~al.(2025)Sun, Bagni, Cavanagh, Wang, Sawyer, Gritsevskiy, Zhang, and Head-Gordon]{sun2025synllama}
+K.~Sun, D.~Bagni, J.~M. Cavanagh, Y.~Wang, J.~M. Sawyer, A.~Gritsevskiy, O.~Zhang, and T.~Head-Gordon.
+\newblock Synllama: Generating synthesizable molecules and their analogs with large language models.
+\newblock \emph{arXiv preprint arXiv:2503.12602}, 2025.
+
+\bibitem[Sun et~al.(2024)Sun, Lo, Guo, Chen, Coley, and Matusik]{sun2024procedural}
+M.~Sun, A.~Lo, M.~Guo, J.~Chen, C.~Coley, and W.~Matusik.
+\newblock Procedural synthesis of synthesizable molecules.
+\newblock \emph{arXiv preprint arXiv:2409.05873}, 2024.
+
+\bibitem[Swanson et~al.(2024)Swanson, Liu, Catacutan, Arnold, Zou, and Stokes]{swanson2024synthemol}
+K.~Swanson, G.~Liu, D.~B. Catacutan, A.~Arnold, J.~Zou, and J.~M. Stokes.
+\newblock Generative ai for designing and validating easily synthesizable and structurally novel antibiotics.
+\newblock \emph{Nature machine intelligence}, 6\penalty0 (3):\penalty0 338--353, 2024.
+
+\bibitem[Tripp and Hern{\'a}ndez-Lobato(2023)]{tripp2023genetic}
+A.~Tripp and J.~M. Hern{\'a}ndez-Lobato.
+\newblock Genetic algorithms are strong baselines for molecule generation.
+\newblock \emph{arXiv preprint arXiv:2310.09267}, 2023.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez, {\L}.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Verhellen(2022)]{verhellen2022graph}
+J.~Verhellen.
+\newblock Graph-based molecular pareto optimisation.
+\newblock \emph{Chemical Science}, 13\penalty0 (25):\penalty0 7526--7535, 2022.
+
+\bibitem[Vinkers et~al.(2003)Vinkers, de~Jonge, Daeyaert, Heeres, Koymans, van Lenthe, Lewi, Timmerman, Van~Aken, and Janssen]{vinkers2003synopsis}
+H.~M. Vinkers, M.~R. de~Jonge, F.~F. Daeyaert, J.~Heeres, L.~M. Koymans, J.~H. van Lenthe, P.~J. Lewi, H.~Timmerman, K.~Van~Aken, and P.~A. Janssen.
+\newblock Synopsis: synthesize and optimize system in silico.
+\newblock \emph{Journal of medicinal chemistry}, 46\penalty0 (13):\penalty0 2765--2773, 2003.
+
+\bibitem[Wijmans et~al.(2024)Wijmans, Huval, Hertzberg, Koltun, and Kr{\"a}henb{\"u}hl]{wijmans2024cut}
+E.~Wijmans, B.~Huval, A.~Hertzberg, V.~Koltun, and P.~Kr{\"a}henb{\"u}hl.
+\newblock Cut your losses in large-vocabulary language models.
+\newblock \emph{arXiv preprint arXiv:2411.09009}, 2024.
+
+\bibitem[{WuXi AppTec}(2025)]{wuxi}
+{WuXi AppTec}.
+\newblock Library-chemistry --- wuxiapptec.com.
+\newblock \url{https://chemistry.wuxiapptec.com/library}, 2025.
+\newblock [Accessed 16-11-2025].
+
+\bibitem[Zhu et~al.(2025)Zhu, Li, Chen, Zhao, Wang, Li, Liu, Kong, Zhang, Liu, et~al.]{zhu2025syngfn}
+Y.~Zhu, S.~Li, J.~Chen, D.~Zhao, X.~Wang, Y.~Li, Y.~Liu, Y.~Kong, B.~Zhang, C.~Liu, et~al.
+\newblock Syngfn: learning across chemical space with generative flow-based molecular discovery.
+\newblock \emph{Nature Computational Science}, pages 1--10, 2025.
+
+\end{thebibliography}

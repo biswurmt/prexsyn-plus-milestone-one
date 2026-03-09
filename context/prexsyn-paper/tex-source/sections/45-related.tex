@@ -1,0 +1,18 @@
+\section{Related Work}
+\label{sec:related}
+
+
+Synthesizable molecular design methods can be roughly divided into two categories. 
+The first directly searches the combinatorial space of synthetic pathways \citep{vinkers2003synopsis,hartenfeller2012dogs,korovina2020chembo,gottipati2020learning,horwood2020reactor,bradshaw2020barking,gao2021amortized,swanson2024synthemol,cretu2024synflownet,seo2024generative,koziarski2024rgfn,zhu2025syngfn}. 
+Their performance remains limited due to several unaddressed challenges.
+First, the action space of building block selection is extremely large, the size of which often reaches hundreds of thousands or millions \citep{enamineBuildingBlocks}.
+They generate synthetic pathways by explicitly selecting building blocks from such large libraries, which is difficult to sufficiently explore chemical space during both training and sampling.
+Second, the search space of synthetic pathways is sparse as not all combinations of building blocks and reactions lead to valid syntheses.
+Lastly, the representation of synthetic pathways is not informed of the structural features of the resulting product molecules.
+Models that learn distributions over synthetic pathways are typically only aware of the combinatorial rules of reactions and building blocks.
+As a result, the structural features of the products, which are crucial determinants of molecular properties, are not captured, leading to a gap between pathway generation and property optimization.
+These issues limit the sampling efficiency of this category of methods, making them even less practical for real-world applications that require expensive property evaluations or involve multiple property constraints.
+
+The second category trains models to construct synthetic pathways from input molecular graphs \citep{luo2024projecting,gao2025generative,sun2024procedural,sun2025synllama,lee2025rethinking}.
+These models, however, cannot generate molecules conditioned on property specifications and remain limited in both chemical space coverage and efficiency.
+Beyond these two categories, other methods focus on specific problem classes, such as structure-based drug design \citep{jocys2024synthformer,rekesh2025syncogen}, or formulate the task differently, for instance, treating synthesizability as an optimization objective \citep{guo2024saturn,guo2025directly}.

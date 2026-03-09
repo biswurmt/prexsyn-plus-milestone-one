@@ -1,0 +1,39 @@
+\section{Introduction}
+\label{sec:intro}
+
+Advances in generative models have led to the proliferation of new methods for molecular design, offering higher sampling efficiency than enumerative virtual screening \citep{gomez2018automatic,gao2022sample}. 
+Predominantly, generative models represent molecules in the form of strings, graphs, or 3D coordinates, which are agnostic to synthesizability.
+As a result, these models tend to propose molecules that are difficult or even impossible to synthesize in practice when used for molecular optimization \citep{gao2020synthesizability}.
+The lack of synthetic tractability has been a major bottleneck hindering experimental validation and translation to biomedical applications. 
+
+Methods that focus on generating synthetic pathways rather than unconstrained molecular graphs have emerged as a promising approach to addressing the synthesizability issue \citep{gao2021amortized,swanson2024synthemol,horwood2020reactor,cretu2024synflownet}, since synthesis pathways composed of vendor-validated building blocks and reaction protocols can be executed with an estimated success rate of around 85\% \citep{grygorenko2020generating}.
+Among these methods, one notable category is the ``chemical space projection'' approach which aims to find structurally similar molecules, or analogs, within the synthesizable space for any molecular graph \citep{luo2024projecting}.
+In this paradigm, an external generative model is first used to draft molecular graphs that satisfy specific properties but are not necessarily synthesizable. Then, these molecular graphs are ``projected'' to synthesizable analogs in form of \textit{postfix notation of synthesis}, a linear and synthetic pathway-based molecular representation.
+
+However, methods in this category face two major challenges.
+First, their coverage of the synthesizable chemical space remains limited.
+Even the recent state-of-the-art models \citep{gao2025generative,sun2025synllama} reconstruct only about 70\% of the Enamine REAL space, where the molecules are derived from the same Enamine building block library used for training.
+Some other recent methods have reported higher reconstruction rates \citep{lee2025rethinking}, but these improvements come at the cost of substantially increased sampling time due to extensive inference-time search, limiting their practicality for real-world, large-scale applications.
+Second, the two-stage generation-projection process inevitably creates structural and functional inconsistencies between the molecular graphs and the synthesizable analogs, often leading to degraded or inconsistent properties.
+These challenges highlight the need to improve coverage of synthesizable chemical space so that models develop better knowledge of the synthesizable landscape. 
+On top of this, it is also important to move beyond graph-conditioned projection toward property-conditioned generation in order to bridge the gap between molecular properties and synthesizability.
+
+
+Motivated by these challenges, our goal is to develop a generative model that (1) guarantees synthesizability according to predefined reaction rules, (2) has high coverage of the synthesizable chemical space, (3) generates molecules directly within the synthesizable chemical space according to molecular properties, (4) has high inference speed, and (5) has high sample efficiency when used for black-box optimization.
+
+
+We present \textbf{PrexSyn} as a solution.
+PrexSyn uses the postfix notation of a synthetic pathway as its molecular representation which ensures synthesizability subject to well-defined reaction rules and building blocks \citep{luo2024projecting}.
+Moving beyond the previous graph-conditioned projection frameworks \citep{luo2024projecting,gao2025generative,lee2025rethinking}, PrexSyn is formulated as a general \textit{property-conditioned} model, which is built upon a decoder-only transformer that autoregressively generates the postfix notations of synthesis conditioned on property prompts. Further, 
+PrexSyn is trained on a billion-scale datastream of synthesizable pathways paired with molecular properties using only two GPUs and 32 CPU cores in two days, which is made possible by a real-time, high-throughput C\texttt{++}-based data generation engine. This represents a substantially larger scale of training while still requiring less compute than prior work.
+
+PrexSyn achieves a record-high 94\% reconstruction rate on the Enamine REAL space, surpassing previous methods by a large margin, demonstrating a near-perfect coverage of this synthesizable chemical space.
+PrexSyn is also significantly faster than any prior methods, achieving over 60 times speedup in inference time compared to the highest-accuracy baseline, enabled by its stronger model capacity that eliminates the need for inference-time search.
+
+We showcase the property-conditioned generation capability of PrexSyn by training it on a set of molecular descriptors widely used in QSAR modeling \citep{roy2015qsarbook}, including molecular fingerprints, fragment structures, and multiple physicochemical descriptors.
+To further enable logical composition of multiple properties connected by logical operators (AND, NOT, OR) \citep{du2020compositional}, we present a sampling algorithm that compiles logical queries into arithmetic combinations of probability distributions conditioned on each individual property prompt, allowing users to ``program'' complex generation objectives. 
+
+The property-based querying capability of PrexSyn creates a new way of sampling molecules with respect to black-box oracle functions, referred to as \textit{query-space optimization}, where property queries are iteratively refined using oracle feedback.
+PrexSyn achieves higher sampling efficiency than not only synthesis-based methods but also synthesis-agnostic baselines.
+This advantage arises because the query space is numerical and therefore well-structured, making it easier to optimize over than the discrete and sparse search spaces of molecular graphs \citep{jensen2019graph,gao2025generative} or synthetic trees \citep{swanson2024synthemol,cretu2024synflownet}.
+The high molecular sampling efficiency, combined with guaranteed synthesizability, makes PrexSyn a powerful general-purpose tool for molecular design and optimization.

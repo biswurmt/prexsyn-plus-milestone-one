@@ -1,0 +1,12 @@
+\begin{tabular}{lll cccccc}
+\toprule
+ & & & Best & \multicolumn{3}{c}{Average Score ($\uparrow$)} & \multicolumn{2}{c}{Diversity ($\uparrow$)}\\
+ \# & Task Description & Query & Score & T5\% & T10\% & All & T5\% & T10\% \\
+\midrule
+1 & \makecell[l]{Generate molecules that \\ satisfy Lipinski's Rule of 5.} & \makecell[l]{\tt MW<500 AND \\ \tt Donors<5 AND \\ \tt Acceptors<10 AND \\ \tt RotatableBonds<10 AND \\ \tt TPSA<140 AND CLogP<5.0} & \makecell{1.0000 \\ $\pm$.0000} & \makecell{1.0000 \\ $\pm$.0000} & \makecell{1.0000 \\ $\pm$.0000} & \makecell{0.9549 \\ $\pm$.0036} & \makecell{0.8902 \\ $\pm$.0011} & \makecell{0.8902 \\ $\pm$.0011}\\
+\addlinespace[0.5em]
+2 & \makecell[l]{Find analogs of Cobimetinib \\ that have 3 rotatable bonds and \\ 3 aromatic rings. Crippen logP \\ should not exceed 5.0} & \makecell[l]{\tt ECFP4("OC1(CN...") AND \\ \tt RotatableBonds=3 AND \\ \tt AromaticRings=3 AND  \\ \tt CLogP<5.0} & \makecell{0.9326 \\ $\pm$.0040} & \makecell{0.8975 \\ $\pm$.0013} & \makecell{0.8848 \\ $\pm$.0017} & \makecell{0.7108 \\ $\pm$.0060} & \makecell{0.6017 \\ $\pm$.0113} & \makecell{0.6770 \\ $\pm$.0176} \\
+\addlinespace[0.5em]
+3 & \makecell[l]{Reduce the lipophilicity of \\ Osimertinib by increasing \\ TPSA to above 100 and \\ reducing logP to below 1.0} & \makecell[l]{\tt ECFP4("COc1cc...") AND \\ \tt NOT TPSA<100 AND \\ \tt CLogP<1.0} & \makecell{0.9164 \\ $\pm$.0217} & \makecell{0.8314 \\ $\pm$.0081} & \makecell{0.8068 \\ $\pm$.0047} & \makecell{0.4971 \\ $\pm$.0085} & \makecell{0.7499 \\ $\pm$.0234} & \makecell{0.8024 \\ $\pm$.0061} \\
+\bottomrule
+\end{tabular}

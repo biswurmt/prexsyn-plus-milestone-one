@@ -4,20 +4,19 @@
 \begin{table}[h]
 \centering
 \small
-\begin{tabular}{p{2.2cm} p{5.2cm} p{2.0cm} p{2.8cm}}
+\begin{tabularx}{\textwidth}{p{2.0cm} X >{\raggedright\arraybackslash}p{3.5cm} p{2.0cm}}
 \toprule
-\textbf{Week} & \textbf{Task} & \textbf{Lead} & \textbf{Notes / Bottleneck} \\
+\textbf{Week} & \textbf{Task} & \textbf{Lead} & \textbf{Bottleneck} \\
 \midrule
-Mar 9--16 & PrexSyn environment setup and baseline inference & & GPU access for PrexSyn \\
-Mar 9--16 & AiZynthFinder integration and validation & & \\
-Mar 9--16 & Pilot saturation study (5 specs $\times$ 4 methods $\times$ 1K variants) & & Determines variant cap $N$ \\
+Mar 9--16 & PrexSyn environment setup and baseline inference & Huang & GPU access \\
+Mar 9--16 & AiZynthFinder integration and validation & Luo & \\
+Mar 9--16 & Pilot saturation study & Biswurm, Nakamura & Sets $N$ \\
 \midrule
-Mar 16--23 & Baseline generation (repeated PrexSyn sampling) & & \\
-Mar 16--23 & Full variant generation (100 stratified specs $\times$ 4 methods) & & AiZynthFinder throughput \\
+Mar 16--23 & Baseline generation & Huang & \\
+Mar 16--23 & Full variant generation & Biswurm, Nakamura, Luo & Throughput \\
 \midrule
-Mar 23--30 & Evaluation pipeline and complementarity analysis & & \\
-Mar 23--30 & Figures and Milestone 2 draft & & \\
+Mar 23--30 & Evaluation pipeline and complementarity analysis & All & \\
+Mar 23--30 & Figures and Milestone 2 draft & Biswurm, Luo & \\
 \bottomrule
-\end{tabular}
-\caption*{\textit{Bottleneck mitigation:} Spec count reduced to 100 via pre-stratified sampling; variant count capped by pilot saturation; canonical-SMILES deduplication before AiZynthFinder; parallel execution on rented multi-core compute ($\sim$80K molecules, under 1 hour on 16 cores).}
+\end{tabularx}
 \end{table}

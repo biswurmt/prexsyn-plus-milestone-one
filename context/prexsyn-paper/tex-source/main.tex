@@ -1,0 +1,49 @@
+\documentclass{techreport}
+
+\input{math_commands}
+
+\input{preamble}
+\usepackage[skip=0.3em]{caption}
+
+
+\title{Efficient and Programmable Exploration of Synthesizable Chemical Space}
+
+
+\author{Shitong Luo$^1$, Connor W. Coley$^{1,2}$\\
+\vspace{1em}
+\normalfont
+$^1$ Department of Electrical Engineering and Computer Science \\
+$^2$ Department of Chemical Engineering \\
+Massachusetts Institute of Technology \\
+\texttt{\{luost,ccoley\}@mit.edu} \\
+\vspace{1em}
+}
+
+
+\begin{document}
+\maketitle
+\thispagestyle{firstpagestyle}
+
+\input{sections/00-abstract}
+\input{sections/10-intro}
+\input{sections/30-method}
+\input{sections/40-results}
+\input{sections/45-related}
+\input{sections/50-concl}
+
+\section*{Code and Data Availability}
+The code, data, and trained model weights are available at: \\\url{https://github.com/luost26/PrexSyn}
+
+\section*{Acknowledgment}
+This research was supported by the Office of Naval Research under grant number N00014-21-1-2195 and the AI2050 program at Schmidt Futures under grant number G-22-64475. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Office of Naval Research. S.L. received additional funding from the MIT Health and Life Sciences Collaborative (HEALS).
+
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\vspace{1em}
+{\it Compiled on \DTMnow}
+
+% \beginappendix
+% \input{sections/appendix}
+
+\end{document} 
