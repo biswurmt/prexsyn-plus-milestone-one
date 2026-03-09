@@ -6,24 +6,24 @@
 
 ## Phase 1: New Draft Generation
 - [x] Read all context documents and existing sections
-- [ ] Draft 01-intro.tex (new)
-- [ ] Draft 02-methods.tex (new)
-- [ ] Draft 03-preprocessing.tex (new)
-- [ ] Draft 04-diagram.tex (new)
-- [ ] Draft 05-setup.tex (new)
-- [ ] Draft 06-timeline.tex (new)
-- **Status:** In progress
-- **Commit:** (pending)
+- [x] Draft 01-intro.tex (new)
+- [x] Draft 02-methods.tex (new)
+- [x] Draft 03-preprocessing.tex (new)
+- [x] Draft 04-diagram.tex (new)
+- [x] Draft 05-setup.tex (new)
+- [x] Draft 06-timeline.tex (new)
+- **Status:** Complete
+- **Commit:** ba314e4
 
 ## Phase 2: Information Loss Verification
-- [ ] Extract fact list from existing sections
-- [ ] Cross-reference with new draft
-- [ ] Reconciliation audit
-- [ ] Revise if needed
-- **Status:** Not started
+- [x] Extract fact list from existing sections
+- [x] Cross-reference with new draft
+- [x] Reconciliation audit (zero loss confirmed)
+- [x] Revise if needed (none required)
+- **Status:** Complete — all 40+ quantitative facts, citations, design decisions preserved
 
 ## Phase 3–7: Editing Passes
-- Pass 1: Narrative Structure & Core Argument — Not started
+- Pass 1: Narrative Structure & Core Argument — In progress
 - Pass 2: Drug Discovery Payoff & Practical Framing — Not started
 - Pass 3: Methodological Rigor & Critical Clarity — Not started
 - Pass 4: Quantification & Metric Confidence — Not started
