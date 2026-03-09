@@ -224,21 +224,20 @@ pp. \bfpage{2323}--\blpage{2332}
 \endbibitem
 
 %%% 13
-\bibitem[\protect\citeauthoryear{Correia et~al.}{2023}]{bib13}
-\begin{bchapter}
-\bauthor{\bsnm{Correia}, \binits{J.}},
-\bauthor{\bsnm{Pereira}, \binits{V.}},
-\bauthor{\bsnm{Rocha}, \binits{M.}}:
-\bctitle{Combining evolutionary algorithms with reaction rules towards focused
-  molecular design}.
-In: \bbtitle{Proceedings of the Genetic and Evolutionary Computation Conference
-  (GECCO '23)},
-pp. \bfpage{864}--\blpage{872}.
-\bpublisher{ACM},
-\blocation{New York}
-(\byear{2023})
-\doiurl{10.1145/3583131.3590413}
-\end{bchapter}
+\bibitem[\protect\citeauthoryear{Bickerton et~al.}{2012}]{bib13}
+\begin{barticle}
+\bauthor{\bsnm{Bickerton}, \binits{G.R.}},
+\bauthor{\bsnm{Paolini}, \binits{G.V.}},
+\bauthor{\bsnm{Besnard}, \binits{J.}},
+\bauthor{\bsnm{Muresan}, \binits{S.}},
+\bauthor{\bsnm{Hopkins}, \binits{A.L.}}:
+\batitle{Quantifying the chemical beauty of drugs}.
+\bjtitle{Nature Chemistry}
+\bvolume{4},
+\bfpage{90}--\blpage{98}
+(\byear{2012})
+\doiurl{10.1038/nchem.1243}
+\end{barticle}
 \endbibitem
 
 \end{thebibliography}
