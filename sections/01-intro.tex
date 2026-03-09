@@ -1,5 +1,6 @@
 %% PART I: INTRODUCTION AND BACKGROUND
-\section*{Research question \& significance}
+\newpage
+\section*{Research question and significance}
 
 Drug discovery frequently begins with a property wish list: a target molecular weight, lipophilicity, polar surface area, and related descriptors that define a pharmacological profile of interest. The practical challenge is to find synthesizable molecules that match it. Synthesis-aware generative models address this directly: given a property specification, they output molecules composed of purchasable building blocks joined via validated reactions, guaranteeing synthesizability by construction \cite{bib1}. Several models operate in this paradigm, including SynNet, ChemProjector, SynFormer, and PrexSyn \cite{bib2}.
 
@@ -9,7 +10,7 @@ This coverage gap is structural: every synthesis-aware generator is bounded by i
 
 We investigate whether post-generation molecular modification expands the space of viable candidates when composed with the frontier synthesis-aware model. Fragment substitution, matched molecular pair transforms, latent-space editing, and scaffold-constrained decoration are established techniques that predate generative AI, operate outside Enamine REAL, and are available as open-source tools. We benchmark four such methods (two rule-based, two learned) on their ability to produce synthesizable, property-conserving candidates beyond what repeated PrexSyn sampling achieves. Results are stratified by how well PrexSyn performs alone (the baseline difficulty), revealing when modification adds the most marginal value. A complementarity analysis identifies which method combinations maximize total unique coverage, informing pipeline design and tool selection for both medicinal chemistry workflows and automated agent-driven design systems. This benchmark yields two core outputs: individual method rankings by marginal value, and optimal multi-method combinations that extend the generator's chemical reach without retraining.
 
-\section*{Context \& datasets}
+\section*{Context and datasets}
 
 PrexSyn \cite{bib2} generates synthesis pathways from $\sim$480,000 Enamine in-stock building blocks via 115 reaction templates, conditioned on molecular property specifications. We use it as a black-box generator: given a property profile, it returns synthesizable candidates within Enamine REAL.
 
