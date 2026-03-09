@@ -16,12 +16,14 @@
 \usepackage{textcomp}
 \usepackage{manyfoot}
 \usepackage{booktabs}
+\usepackage{tabularx}
 \usepackage{algorithm}
 \usepackage{algorithmicx}
 \usepackage{algpseudocode}
 \usepackage{listings}
 
 \raggedbottom
+\newcommand{\diagramwidth}{0.78\textwidth}
 
 \begin{document}
 
@@ -34,7 +36,7 @@
 
 \affil*[1]{\orgdiv{Department of Computer Science}, \orgname{University of Toronto}, \orgaddress{\city{Toronto}, \country{Canada}}}
 
-\abstract{Synthesis-aware generative models produce drug candidates guaranteed to be synthesizable from commercial building blocks, but each is bounded by its training chemical space. PrexSyn, the current state of the art, reconstructs 94\% of Enamine REAL molecules but only 28\% of the broader ChEMBL bioactive distribution, leaving 72\% of pharmacologically validated chemical space beyond its reach. We investigate whether post-generation modification methods expand this coverage when composed with the generative model. Four methods spanning rule-based and learned paradigms (CReM, mmpdb, JT-VAE, LibINVENT) are applied to PrexSyn's output across 100 ChEMBL-derived property specifications stratified by difficulty. Variants are evaluated on synthesizability, property conservation (substructural and physicochemical), drug-likeness, and chemical diversity, then ranked by marginal value over a repeated-sampling baseline. Complementarity analysis identifies optimal multi-method combinations, providing empirical guidance for extending synthesis-aware generation in drug discovery workflows.}
+\input{sections/00-abstract}
 
 \keywords{molecular generation, synthetic chemistry, drug discovery, machine learning}
 
@@ -42,8 +44,6 @@
 
 %% INPUT: Sections
 \input{sections/01-intro}
-
-\newpage
 
 \input{sections/02-methods}
 
