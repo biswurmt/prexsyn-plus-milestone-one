@@ -1,0 +1,23 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+
+# Build output
+out/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+
+# Agent/process artifacts
+AGENT_REWRITE_PROMPT.md
+EDITING_PROGRESS.md
+REWRITE_PROGRESS.md
